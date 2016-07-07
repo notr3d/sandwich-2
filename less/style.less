@@ -1,1 +1,67 @@
 //@import "vendor.less";
+@import "header.less";
+@import "site-nav.less";
+
+@m: ~ "(max-width: 767px)";
+@t: ~ "(min-width: 768px)";
+@d: ~ "(min-width: 1080px)";
+
+@black: #333;
+@white: #eee;
+
+@blue: #2e97d7;
+
+.lcw {
+	margin: 0 auto;		
+	@media @m {
+		width: 100%;
+	}
+	@media @t {
+		width: 768px;
+	}
+	@media @d {
+		width: 1080px;
+	}	
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;	
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {	
+	font-family: 'Open Sans Condensed', sans-serif;	
+}
+
+.site {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;	
+	min-height: 100vh;
+}
+
+.site-content {
+	flex-grow: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.content-area {
+	width: 100%;
+}
+
+.site-footer {
+	min-height: 100px;
+	background: @black;
+}
+
