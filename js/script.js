@@ -22,3 +22,28 @@ $(document).ready(function(){
 		bg.animate;
 	});*/
 });
+
+//кнопка вверх
+$('.up').click(function(){
+	$('body').animate({scrollTop: 0}, 300);
+	return false;
+});
+
+{
+	function initUP() {
+		window.addEventListener('scroll', function(e){
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+				shrinkOn = 200,
+				scrollup = $('.up');
+			if (distanceY > shrinkOn) {
+				$(scrollup).addClass('up--visible');
+				
+			} else {
+				if (scrollup.hasClass('up--visible')) {
+					scrollup.removeClass('up--visible');
+				}
+			}
+		});
+	}
+	window.onload = initUP();
+}

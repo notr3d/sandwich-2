@@ -138,3 +138,18 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+//----------------------------------------------------------------------
+
+function register_menus() {
+  register_nav_menus(
+    array(
+	  'header-nav' => __( 'Header navigation' ),	
+	  'footer-nav-1' => __( 'Footer navigation 1' ),
+	  'footer-nav-2' => __( 'Footer navigation 2' ),
+	  'footer-nav-3' => __( 'Footer navigation 3' ),
+	  'footer-nav-4' => __( 'Footer navigation 4' )
+    )
+  );
+}
+add_action( 'init', 'register_menus' );

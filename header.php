@@ -11,8 +11,13 @@
 <body <?php body_class(); ?>>
 <div class="site">
 	<header class="site-header">
-		<div class="site-header__wrapper">
-			<div class="site-logo"></div>
+		<div class="site-header__wrapper lcw">
+			<a href="home" class="site-logo"></a>			
 		</div>
+		<?php wp_nav_menu(array(
+			'theme_location' => 'header-nav',
+			'container_class' => 'header-nav',
+			'menu_class' => 'header-nav__wrapper lcw'
+		)); ?>
 	</header>
-	<div class="site-content">
+	<main class="site-content">

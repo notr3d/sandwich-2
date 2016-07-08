@@ -1,6 +1,8 @@
 //@import "vendor.less";
 @import "header.less";
+@import "footer.less";
 @import "site-nav.less";
+@import "contacts.less";
 
 @m: ~ "(max-width: 767px)";
 @t: ~ "(min-width: 768px)";
@@ -26,15 +28,44 @@
 
 * {
 	box-sizing: border-box;
+	transition: .1s;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;	
 	margin: 0;
+	background: @white;
 }
 
 h1, h2, h3, h4, h5, h6 {	
 	font-family: 'Open Sans Condensed', sans-serif;	
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+article {
+	margin: 0 auto;		
+	@media @m {
+		width: 100%;
+	}
+	@media @t {
+		width: 768px;
+	}
+	@media @d {
+		width: 1080px;
+	}
+}
+
+input, textarea {
+	padding: 15px;
+	color: @black;
+	border: 1px solid @black;
+	resize: vertical;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .site {
@@ -54,14 +85,37 @@ h1, h2, h3, h4, h5, h6 {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	flex-direction: column;
 }
 
-.content-area {
-	width: 100%;
+.page-header {
+	text-transform: uppercase;
+	font-size: 45px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+	margin: 15px 0 30px;
 }
 
-.site-footer {
-	min-height: 100px;
-	background: @black;
+.page-heading {
+	&__header {
+		text-transform: uppercase;
+		font-size: 55px;
+		letter-spacing: 1px;
+		margin: 15px 0 45px;
+		border-bottom: 5px solid @black;
+		&::before {
+			content: '»';
+			text-align: center;
+			padding: 0 15px;
+			color: @blue;
+		}
+		span {
+			border-bottom: 5px solid @blue;
+		}
+	}
+	&__text {
+		background: rgba(0, 0, 0, 0.4);
+		color: @white;
+		padding: 15px;
+	}
 }
-
