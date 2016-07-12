@@ -21,6 +21,15 @@ $(document).ready(function(){
 		var bg = $('.site-nav');
 		bg.animate;
 	});*/
+	var callbackOpen = $('.callback__open');	
+	var callbackBody = $('.callback');
+	var callbackClose = $('.callback__close');
+	callbackOpen.click(function(){
+		callbackBody.addClass('callback--open');
+	});
+	callbackClose.click(function(){
+		callbackBody.removeClass('callback--open');
+	});
 });
 
 //кнопка вверх

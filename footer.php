@@ -47,7 +47,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="site-footer-map" id="site-footer-map"></div>
+		<?php if (!is_page($page = "contacts")): ?>
+			<div class="site-footer-map" id="site-footer-map"></div>
+		<?php endif; ?>
 		<div class="site-footer-copy">
 			<div class="site-footer-copy__wrapper lcw">
 				<p class="site-footer-copy__text">© 2016 «Новый Формат»</p>
@@ -55,6 +57,29 @@
 		</div>
 		<button type="button" class="up">^</button>
 	</footer>
+	<div class="callback">
+		<div class="callback__wrapper">
+			<h2 class="callback__header">Отправить заявку</h2>
+			<form action="" class="callback__form">
+				<div class="callback__item">
+					<input type="text" placeholder="Имя">
+				</div>
+				<div class="callback__item">
+					<input type="tel" placeholder="Телефон">
+				</div>
+				<div class="callback__item">
+					<input type="email" placeholder="E-mail">
+				</div>	
+				<div class="callback__item callback__item--big">
+					<textarea></textarea>
+				</div>	
+				<div class="callback__item">
+					<input type="submit" placeholder="Отправить">
+				</div>					
+			</form>
+			<button class="callback__close">×</button>
+		</div>
+	</div>
 </div><!-- #page -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-vOBdjVqwgHav99Lw79O25RL04z5pq2c" type="text/javascript"></script>

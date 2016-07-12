@@ -31,6 +31,7 @@
 			</div>			
 		</div>
 		<div class="site-nav-submenu" id="submenu-1">
+			<h2 class="site-nav-submenu__header">Сэндвич-панели</h2>
 			<div class="site-nav-submenu__item">
 				<a href="wall" class="site-nav-submenu__inner">
 					<img src="" alt="">
@@ -63,6 +64,7 @@
 			</div>				
 		</div>
 		<div class="site-nav-submenu" id="submenu-3">
+			<h2 class="site-nav-submenu__header">Услуги</h2>
 			<div class="site-nav-submenu__item">
 				<a href="delivery" class="site-nav-submenu__inner">
 					<img src="" alt="">
@@ -95,6 +97,7 @@
 			</div>					
 		</div>
 		<div class="site-nav-submenu" id="submenu-4">
+			<h2 class="site-nav-submenu__header">О заводе</h2>
 			<div class="site-nav-submenu__item">
 				<a href="partners" class="site-nav-submenu__inner">
 					<img src="" alt="">
