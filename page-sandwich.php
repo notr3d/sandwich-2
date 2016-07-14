@@ -7,7 +7,7 @@
 		</div>
 	</div>
 	<div class="site-nav__wrapper lcw">
-		<div class="site-nav-menu">
+		<div class="site-nav-submenu">
 			<div class="site-nav-submenu__item">
 				<a href="wall" class="site-nav-submenu__inner">
 					<img src="" alt="">
@@ -82,13 +82,39 @@
 			<li>индивидуальный подход к каждому клиенту.</li>
 		</ul>
 		<p>Если вас интересует продажа сэндвич-панелей, обращайтесь к нам по телефону <b>8 (495) 663-86-87</b> или оставляйте заявку на сайте. Мы будем рады обеспечить вам поставки материалов на привлекательных условиях!</p>
+	</section>
+	<section class="types">
+		<h2>Виды сэндвич-панелей</h2>
+		<div class="types__container">
+			<div class="types__item">
+				<a href="wall" class="types__inner">
+					<div class="types__mask">
+						<h2>Стеновые сэндвич-панели</h2>
+					</div>
+				</a>
+			</div>
+			<div class="types__item">
+				<a href="roof" class="types__inner">
+					<div class="types__mask">
+						<h2>Кровельные сэндвич-панели</h2>
+					</div>
+				</a>
+			</div>
+			<div class="types__item">
+				<a href="metal" class="types__inner">
+					<div class="types__mask">
+						<h2>Металлические сэндвич-панели</h2>
+					</div>
+				</a>
+			</div>			
+		</div>
 	</section>		
 </article>
 <div class="consult">
 	<div class="consult__wrapper lcw">
 		<h2 class="consult__header">Для того, чтобы купить стеновые сэндвич-панели «Новый Формат», заполните форму заказа или свяжитесь с нашим оператором по телефону:</h2>
 		<p class="consult__tel">8 (495) 663-86-87</p>
-		<button type="button" class="callback__open">Оставить заявку</button>
+		<button type="button" class="consult__button" id="callback-open">Оставить заявку</button>
 	</div>
 </div>
 <?php get_footer(); ?>

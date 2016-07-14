@@ -30,7 +30,7 @@
 						)); ?>
 					</div>
 					<div class="site-footer-nav__column">
-						<h3 class="site-footer-nav__header">О компании</h3>
+						<h3 class="site-footer-nav__header">О заводе</h3>
 						<?php wp_nav_menu(array(
 							'theme_location' => 'footer-nav-4',
 							'container_class' => 'site-footer-nav__item',
@@ -48,14 +48,14 @@
 			</div>
 		</div>
 		<?php if (!is_page($page = "contacts")): ?>
-			<div class="site-footer-map" id="site-footer-map"></div>
+			<div class="site-footer-map" id="map"></div>
 		<?php endif; ?>
 		<div class="site-footer-copy">
 			<div class="site-footer-copy__wrapper lcw">
 				<p class="site-footer-copy__text">© 2016 «Новый Формат»</p>
 			</div>
 		</div>
-		<button type="button" class="up">^</button>
+		<button type="button" class="up">↑</button>
 	</footer>
 	<div class="callback">
 		<div class="callback__wrapper">
@@ -92,7 +92,7 @@
 			zoom: 16,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
-		var map = new google.maps.Map(document.getElementById('site-footer-map'), prop);
+		var map = new google.maps.Map(document.getElementById('map'), prop);
 		var marker = new google.maps.Marker({
 			position: center,
 			icon: '<?php echo get_template_directory_uri(); ?>/img/map-icon.png',
@@ -102,6 +102,8 @@
 	};
 	google.maps.event.addDomListener(window, 'load', init);
 </script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/odometer.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 <?php wp_footer(); ?>
 </body>

@@ -6,6 +6,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,700&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/odometer-theme-default.css">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
