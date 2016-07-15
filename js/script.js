@@ -24,7 +24,7 @@ siteNavItem.hover(function(){
 });*/
 	
 //окно обр свзяи
-var callbackOpen = $('#callback-open');	
+var callbackOpen = $('.callback__open');	
 var callbackBody = $('.callback');
 var callbackClose = $('.callback__close');
 callbackOpen.click(function(){

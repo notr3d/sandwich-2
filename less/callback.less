@@ -11,7 +11,7 @@
 	}
 	&__wrapper {
 		width: 600px;
-		background: @white;
+		background: rgba(255, 255, 255, 0.9);
 		padding: 8px;
 		position: absolute;
 		top: 50%;
@@ -38,6 +38,27 @@
 		flex-basis: 33.33%;
 		input, textarea {
 			width: 100%;
+			padding: 15px;
+			resize: vertical;
+		}
+		input {
+			&[type="submit"] {
+				background: @white;
+				color: @red;
+				border: 1px solid @red;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: .1s;
+				font-weight: bold;
+				letter-spacing: 1px;
+				&:hover {
+					background: @red;
+					color: @white;
+				}
+			}
+		}
+		textarea {
+			resize: vertical;
 		}
 		&--big {
 			flex-basis: 100%;
@@ -51,13 +72,17 @@
 		height: 32px;
 		display: inline-block;
 		padding: 0;
-		font-size: 50px;
+		font-size: 30px;
 		line-height: 32px;
 		text-align: center;
-		font-weight: bold;
 		border: none;
 		background: none;
 		cursor: pointer;
-		outline: none;
+		outline: none;				
+		font-weight: bold;
+		transition: .3s;
+		&:hover {
+			transform: rotate(90deg);	
+		}
 	}
 }

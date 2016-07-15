@@ -30,6 +30,8 @@
 }
 
 .site-footer-nav {
+	background: #3f444a;	
+	border-bottom: 1px solid @red;
 	&__wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -38,7 +40,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		padding: 15px 0;
-		border-bottom: 1px solid @white;
 	}
 	&__column {
 		padding: 15px;
@@ -76,7 +77,8 @@
 	}
 }
 
-.site-footer-address {
+.site-footer-items {
+	background: linear-gradient(to bottom, #302e2f, #404348);
 	&__wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -84,17 +86,63 @@
 		display: -o-flex;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		font-size: 14px;
+		border-bottom: 1px dotted #92959a;
+		padding: 15px 0;
 	}
 	&__item {
 		padding: 15px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;		
 		@media @m {
 			flex-basis: 100%;
+			
 		}
-		span {
-			color: @blue;
+		@media @t {
+			flex-basis: 50%;
+		}		
+		@media @d {
+			flex-basis: 25%;			
+			&:not(:last-child) {
+				border-right: 1px dotted #92959a;
+			}
 		}
+		p {
+			margin: 0;
+			color: #9fa0a5;
+			font-size: 13px;
+		}
+		a {
+			color: #9fa0a5;
+		}
+		button {
+			color: #9fa0a5;
+		}
+	}
+	&__address {
+		margin-bottom: 15px !important;		
+	}
+}
+
+.site-footer-callback {
+	justify-content: space-between;
+	&__tel {
+		font-size: 24px !important;
+		font-weight: bold;
+	}
+	&__button {
+		background: none;
+		outline: none;
+		border: none;
+		border-bottom: 1px dashed #9fa0a5;
+		padding: 0;
+		margin-bottom: 5px;
 	}
 }
 
@@ -103,11 +151,13 @@
 }
 
 .site-footer-copy {
+	background: #404348;
 	&__wrapper {
 		padding: 15px;
 	}
 	&__text {
 		margin: 0;
-		text-align: right;
+		text-align: center;
+		color: #9fa0a5;
 	}
 }

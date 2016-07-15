@@ -14,7 +14,30 @@
 <div class="site">
 	<header class="site-header">
 		<div class="site-header__wrapper lcw">
-			<a href="home" class="site-logo"></a>			
+			<div class="site-header__item">
+				<a href="home" class="site-logo"></a>
+			</div>
+			<div class="site-header__item fast-links">
+				<div class="fast-links__item">
+					<a href="sandwich">Сэндвич-панели</a>
+				</div>
+				<div class="fast-links__item">					
+					<a href="profnastil">Профнастил</a>
+				</div>
+				<div class="fast-links__item">					
+					<a href="steel">Рулонная сталь</a>
+				</div>	
+			</div>
+			<div class="site-header__item site-header__item--button">
+				<button class="fancy-button callback__open">
+					<span>Отправить заявку</span>
+				</button>
+			</div>
+			<div class="site-header__item site-header-callback">
+				<p class="site-header-callback__tel">+7 (495) 663-86-87</p>
+				<button class="site-header-callback__button">Заказать обратный звонок</button>
+				<p class="site-header-callback__hours">пн.-пт. с <b>9.00</b> до <b>18.00</b></p>
+			</div>					
 		</div>
 		<?php wp_nav_menu(array(
 			'theme_location' => 'header-nav',
