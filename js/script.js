@@ -52,21 +52,33 @@ $(".slider__container").owlCarousel();
 	
 //odometer
 $(document).scroll(function(){
-	var prodCapacity = $('.prod-capacity').offset().top;
-	var scrollTop = $(window).scrollTop();
-	var windowHeight = $(window).outerHeight();
-	var lastWasLower = false;
-	if (scrollTop > prodCapacity - windowHeight && !lastWasLower){
-		$('.odometer').html('4000000');
-		lastWasLower = true;
-	}; 
+	if ($('.prod-capacity').length) { 
+		var prodCapacity = $('.prod-capacity').offset().top;
+		var scrollTop = $(window).scrollTop();
+		var windowHeight = $(window).outerHeight();
+		var lastWasLower = false;
+		if (scrollTop > prodCapacity - windowHeight && !lastWasLower){
+			$('.odometer').html('4000000');
+			lastWasLower = true;
+		}; 
+	}	
 });
 
 //price
 var priceOpenBtn = $('#price-open');
-	priceOpenBtn.click(function(){
-		var priceContainer = $('.price__container');
-		priceContainer.toggle();
+priceOpenBtn.click(function(){
+	var priceContainer = $('.price__container');
+	priceContainer.toggle();
+});
+	
+var menuCat = $('.menu-item-has-children');
+	menuCat.append('<button type="button" class="header-nav__button"></button');
+	var menuBtn = $('.header-nav__button');
+	//menuBtn.prev().hide();
+	menuBtn.click(function(){
+		$(this).prev().slideToggle();
+		$(this).toggleClass('header-nav__button--active');
+		$(this).parent().siblings().find('.sub-menu').slideUp();
 	})
 });
 

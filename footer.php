@@ -2,65 +2,62 @@
 	</main><!-- #content -->
 	<footer class="site-footer">	
 		<div class="site-footer__gradient"></div>
-			<div class="site-footer-nav">
-				<div class="site-footer-nav__wrapper lcw">
-					<div class="site-footer-nav__column">
-						<h3 class="site-footer-nav__header">Основное</h3>
-						<?php wp_nav_menu(array(
-							'theme_location' => 'footer-nav-1',
-							'container_class' => 'site-footer-nav__item',
-							'menu_class' => 'site-footer-nav__list'
-						)); ?>
-					</div>
-					<div class="site-footer-nav__column">
-						<h3 class="site-footer-nav__header">Продукция</h3>
-						<?php wp_nav_menu(array(
-							'theme_location' => 'footer-nav-2',
-							'container_class' => 'site-footer-nav__item',
-							'menu_class' => 'site-footer-nav__list'
-						)); ?>
-					</div>
-					<div class="site-footer-nav__column">
-						<h3 class="site-footer-nav__header">Услуги</h3>
-						<?php wp_nav_menu(array(
-							'theme_location' => 'footer-nav-3',
-							'container_class' => 'site-footer-nav__item',
-							'menu_class' => 'site-footer-nav__list'
-						)); ?>
-					</div>
-					<div class="site-footer-nav__column">
-						<h3 class="site-footer-nav__header">О заводе</h3>
-						<?php wp_nav_menu(array(
-							'theme_location' => 'footer-nav-4',
-							'container_class' => 'site-footer-nav__item',
-							'menu_class' => 'site-footer-nav__list'
-						)); ?>
-					</div>
-				</div>							
-			</div>
-			<div class="site-footer-items">
-				<div class="site-footer-items__wrapper lcw">
-					<div class="site-footer-items__item">
-						<a href="" class="site-logo site-logo--footer"></a>
-					</div>
-					<div class="site-footer-items__item">
-						<p class="site-footer-items__address">111024, г.Москва, ул. Авиамтороная,<br>
-						д.50, стр.2, пом.14, комн.50</p>
-						<a href="mailto:info@novform.ru" class="site-footer-items__email">info@novform@ru</a>
-					</div>
-					<div class="site-footer-items__item site-footer-callback">
-						<p class="site-footer-callback__tel">+7 (495) 663-86-87</p>
-						<button class="callback__button site-footer-callback__button">Заказать обратный звонок</button>
-						<p class="site-footer-callback__hours">пн.-пт. с 9.00 до 18.00</p>
-					</div>
-					<div class="site-footer-items__item">
-						<button class="callback__open fancy-button"><span>Отправить заявку</span></button>
-					</div>
+		<div class="site-footer-nav">
+			<div class="site-footer-nav__wrapper lcw">
+				<div class="site-footer-nav__column">
+					<h3 class="site-footer-nav__header">Основное</h3>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'footer-nav-1',
+						'container_class' => 'site-footer-nav__item',
+						'menu_class' => 'site-footer-nav__list'
+					)); ?>
+				</div>
+				<div class="site-footer-nav__column">
+					<h3 class="site-footer-nav__header">Продукция</h3>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'footer-nav-2',
+						'container_class' => 'site-footer-nav__item',
+						'menu_class' => 'site-footer-nav__list'
+					)); ?>
+				</div>
+				<div class="site-footer-nav__column">
+					<h3 class="site-footer-nav__header">Услуги</h3>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'footer-nav-3',
+						'container_class' => 'site-footer-nav__item',
+						'menu_class' => 'site-footer-nav__list'
+					)); ?>
+				</div>
+				<div class="site-footer-nav__column">
+					<h3 class="site-footer-nav__header">О заводе</h3>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'footer-nav-4',
+						'container_class' => 'site-footer-nav__item',
+						'menu_class' => 'site-footer-nav__list'
+					)); ?>
+				</div>
+			</div>							
+		</div>
+		<div class="site-footer-items">
+			<div class="site-footer-items__wrapper lcw">
+				<div class="site-footer-items__item site-footer-items__item--logo">
+					<a href="" class="site-logo site-logo--footer"></a>
+				</div>
+				<div class="site-footer-items__item">
+					<p class="site-footer-items__address">111024, г.Москва, ул. Авиамтороная,<br>
+					д.50, стр.2, пом.14, комн.50</p>
+					<a href="mailto:info@novform.ru" class="site-footer-items__email">info@novform@ru</a>
+				</div>
+				<div class="site-footer-items__item site-footer-callback">
+					<p class="site-footer-callback__tel">+7 (495) 663-86-87</p>
+					<button class="callback__button site-footer-callback__button">Заказать обратный звонок</button>
+					<p class="site-footer-callback__hours">пн.-пт. с 9.00 до 18.00</p>
+				</div>
+				<div class="site-footer-items__item site-footer-items__item--callback">
+					<button class="callback__open fancy-button"><span>Отправить заявку</span></button>
 				</div>
 			</div>
-		<!--<?php if (!is_page($page = "contacts")): ?>
-			<div class="site-footer-map" id="map"></div>
-		<?php endif; ?>-->
+		</div>
 		<div class="site-footer-copy">
 			<div class="site-footer-copy__wrapper lcw">
 				<p class="site-footer-copy__text">© 2016 «Новый Формат»</p>
@@ -73,15 +70,19 @@
 			<h2 class="callback__header">Отправить заявку</h2>
 			<form action="" class="callback__form">
 				<div class="callback__item">
+					<label for="">Имя</label>
 					<input type="text" placeholder="Имя">
 				</div>
 				<div class="callback__item">
+					<label for="">Телефон</label>
 					<input type="tel" placeholder="Телефон">
 				</div>
 				<div class="callback__item">
+					<label for="">E-mail</label>
 					<input type="email" placeholder="E-mail">
 				</div>	
-				<div class="callback__item callback__item--big">
+				<div class="callback__item callback__item">
+					<label for="">Сообщение</label>
 					<textarea></textarea>
 				</div>	
 				<div class="callback__item">

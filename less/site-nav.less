@@ -68,13 +68,13 @@
 		//border: 1px solid @white;
 		position: relative;
 		overflow: hidden;
+		transition: .3s;
 		&--sandwich {
 			background: url(img/site-nav/bg/sandwich-bg.jpg);
 		}
 		&--profnastil {
 			background: url(img/site-nav/bg/profnastil-bg.jpg);
-		}
-		
+		}		
 		h3 {
 			text-transform: uppercase;
 			margin: 0;
@@ -87,7 +87,12 @@
 			margin-bottom: 30px;
 		}
 		&:hover {
-			//background: rgba(255, 0, 26, 0.4);
+			//background: rgba(255, 0, 26, 0.4);			
+			-webkit-filter: brightness(150%);
+			-moz-filter: brightness(150%);
+			-ms-filter: brightness(150%);
+			-o-filter: brightness(150%);
+			filter: brightness(150%);
 			.site-nav-menu__slide {				
 				color: @black;
 				transform: rotate(45deg) translateX(0);
@@ -114,7 +119,7 @@
 		color: @white;
 		transition: .3s;
 		&:hover {
-			background: @blue;
+			background: darken(#2e97d7, 15%);
 			cursor: pointer;
 			color: @white;
 		}

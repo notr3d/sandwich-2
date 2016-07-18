@@ -15,7 +15,7 @@
 	<header class="site-header">
 		<div class="site-header__wrapper lcw">
 			<div class="site-header__item">
-				<a href="home" class="site-logo"></a>
+				<a href="<?php echo get_permalink( get_page_by_title('главная')->ID ); ?>" class="site-logo"></a>
 			</div>
 			<div class="site-header__item fast-links">
 				<div class="fast-links__item">
