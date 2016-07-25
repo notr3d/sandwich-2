@@ -1,18 +1,20 @@
 .prices {
-	&__header {
-		text-transform: uppercase;
-		text-align: center;
-		color: @blue;
-	}
 	.price {		
-		background: @blue;
+		background: @magenta;
 		color: @white;
 		&__wrapper {
-			padding: 15px 0;
+			//padding: 15px 0;
 		}
 		&__header {
 			text-transform: uppercase;
 			text-align: center;
+            font-size: 36px;
+            margin-bottom: 60px;
+            span {
+                border-left: 1px solid @yellow;
+                border-right: 1px solid @yellow;
+                padding: 5px 15px 10px;
+            }
 		}
 		&-choose {
 			display: -webkit-flex;
@@ -23,42 +25,79 @@
 			align-items: center;
 			justify-content: center;
 			&__item {
-				flex-basis: 40%;
-				text-align: center;
+				flex-basis: 33.33%;
 				h3 {
 					margin: 0;
 				}
 				p {
 					margin: 0;
+				}				
+                &--left {
+                    padding-right: 60px;
+                    font-size: 21px;
+                }
+				&--center {
+					flex-grow: 1;
+                    padding: 0 55px;
+                    text-align: center;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 25px;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: url(img/arrow-left.png) no-repeat center;
+                        background-size: contain;
+                    }
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 25px;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background: url(img/arrow-left.png) no-repeat center;
+                        background-size: contain;                        
+                        transform: rotate(180deg);
+                    }
+                    
 				}
-				button {
-					display: inline-block;
-					padding: 10px 20px;
-					font-size: 18px;
-					text-transform: uppercase;
-					font-weight: bold;
-					color: white;
-					background: linear-gradient(lighten(@yellow, 5%), darken(@yellow, 15%));
-					cursor: pointer;
-					border: none;
-					outline: none;
-				}
-				&--small {
-					flex-basis: 20%;
-					border-left: 1px solid @white;
-					border-right: 1px solid @white;
-					span {
-						background: rgba(0, 0, 0, 0.4);
-						display: inline-block;
-						padding: 7.5px 15px;
-						transform: skew(-15deg);
-						span {
-							transform: skew(15deg);
-							background: transparent;
-						}
-					}
-				}
+                &--right {
+                    padding-left: 60px;
+                    text-align: right;
+                }
 			}
+            &__open {
+                display: inline-block;
+                padding: 20px 30px;
+                font-size: 18px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: @yellow;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                background: url(img/button-border.png) no-repeat center;
+                background-size: cover;
+                font-weight: lighter;
+                span {
+                    padding: 5px 15px;
+                    border-left: 1px solid @yellow;
+                    border-right: 1px solid @yellow;
+                }
+            }
+            &__tel {
+                text-align: center;
+                font-size: 24px;
+                span {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
 		}
 		&__container {
 			padding-top: 30px;
@@ -156,7 +195,7 @@
 				}
 				h4 {
 					margin: 0;
-					background: @blue;
+					background: @magenta;
 					position: absolute;
 					padding: 0 8px;
 					top: -12px;

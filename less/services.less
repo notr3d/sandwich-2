@@ -1,0 +1,35 @@
+.services {
+    .page-heading {
+        &__container {
+            padding: 0 25px;
+        }     
+    }
+    .site-nav {
+        background-image: url(img/services/bg.jpg);
+    }
+    .site-nav-submenu {
+        justify-content: flex-start;
+        padding: 0;
+        &__wrapper {
+            width: 700px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item {
+            padding: 25px;
+            img {
+                min-height: 0;
+                height: auto;
+                width: auto;
+            }
+        }
+        &__inner {
+            padding-top: 45px;
+        }
+    }
+}

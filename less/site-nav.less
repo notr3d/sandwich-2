@@ -1,6 +1,6 @@
 .site-nav {
 	background: url(img/site-nav/bg/bg.jpg) no-repeat center top;
-	background-size: 100% auto;
+	background-size: cover;
 	&__wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -16,9 +16,11 @@
 		.site-nav__wrapper {
 			height: 100%;
 		}
-		.site-nav-submenu {			
+		.site-nav-submenu {	            
+	        border-top: 1px solid @white;
 			@media @d {
 				display: none;
+                border-top: none;
 			}
 		}
 		.site-nav-menu__slide {
@@ -136,7 +138,6 @@
 	flex-wrap: wrap;
 	padding: 0 15px;
 	justify-content: center;
-	border-top: 1px solid @white;
 	@media @d {
 		border: none;
 	}
