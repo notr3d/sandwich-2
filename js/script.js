@@ -58,7 +58,7 @@ $(document).scroll(function(){
 		var windowHeight = $(window).outerHeight();
 		var lastWasLower = false;
 		if (scrollTop > prodCapacity - windowHeight && !lastWasLower){
-			$('.odometer').html('4000000');
+			$('.prod-capacity__odometer').html('4000000');
 			lastWasLower = true;
 		}; 
 	}	

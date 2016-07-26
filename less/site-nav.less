@@ -1,5 +1,5 @@
 .site-nav {
-	background: url(img/site-nav/bg/bg.jpg) no-repeat center top;
+	background: no-repeat center top;
 	background-size: cover;
 	&__wrapper {
 		display: -webkit-flex;
@@ -203,4 +203,32 @@
 			background: rgba(51, 51, 51, 0.9);
 		}
 	}
+}
+
+.home {
+    .site-nav {
+        background-image: url(img/site-nav/bg/bg.jpg);
+    }
+}
+
+.about {
+    .site-nav-submenu {
+        &__item {
+            padding: 0;
+        }
+        &__inner {
+            width: 200px;
+            height: 200px;
+            margin: 30px;            
+            padding-top: 45px;
+            h3 {
+                font-size: 16px;
+            }
+            img {
+                width: auto;
+                height: auto;
+                min-height: 0;
+            }
+        }
+    }
 }
