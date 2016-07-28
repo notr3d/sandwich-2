@@ -46,12 +46,6 @@
 					</a>
 				</div>
 				<div class="site-nav-submenu__item">
-					<a href="metal" class="site-nav-submenu__inner site-nav-submenu__inner--metal">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/wall.png" alt="">
-						<h3>Металлические сэндвич-панели</h3>
-					</a>
-				</div>
-				<div class="site-nav-submenu__item">
 					<a href="fireproof" class="site-nav-submenu__inner site-nav-submenu__inner--fireproof">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/fireproof.png" alt="">
 						<h3>Противопожарные перегородки</h3>

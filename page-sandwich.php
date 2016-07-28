@@ -97,13 +97,13 @@
 		<div class="types__container">
 			<a href="wall" class="types__item">
 				<div class="types__mask">
-					<h2>Стеновые сэндвич-панели</h2>
+					<h2>Стеновые<br>сэндвич-панели</h2>
 					<div class="types__img"></div>
 				</div>
 			</a>
 			<a href="roof" class="types__item">
 				<div class="types__mask">
-					<h2>Кровельные сэндвич-панели</h2>
+					<h2>Кровельные<br>сэндвич-панели</h2>
 					<div class="types__img"></div>
 				</div>
 			</a>		
