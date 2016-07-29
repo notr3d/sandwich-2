@@ -42,8 +42,8 @@
 					<div class="price__item price__item--small">
 						<input type="email" placeholder="E-mail*" required>
 					</div>
-					<div class="price__item price__item--small" placeholder="Телефон">
-						<input type="tel">
+					<div class="price__item price__item--small">
+						<input type="tel" placeholder="Телефон">
 					</div>
 					<div class="price__item price__item--big">
 						<textarea placeholder="Дополнительная информация"></textarea>
@@ -51,9 +51,12 @@
 					<div class="price__item">
 						<input type="file">
 					</div>
-					<div class="price__item">
-						<button type="button" class="price__add">Дополнительные параметры</button>
+					<div class="price__item price__item-small">
+						<input type="submit" value="Отправить">
 					</div>
+					<!--<div class="price__item">
+						<button type="button" class="price__add">Дополнительные параметры</button>
+					</div>-->
 					<div class="price-add">
 						<div class="price-add__container">
 							<div class="price-add__item price-add__item--dim">

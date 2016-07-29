@@ -4,39 +4,39 @@
 		<div class="intro__wrapper lcw">
 			<h1 class="intro__header">Стеновые сэндвич-панели</h1>
 			<p class="intro__text">Компания «Новый Формат» продает в Москве стеновые сэндвич-панели, в том числе с гладкой, волнистой и ребристой поверхностью. Внешние слои изготавливаются из профилированной оцинкованной листовой стали с антикоррозийной защитой и лаковым покрытием, а внутренние – из теплоизоляционного материала: пенополистирола, пенополиуретана, пенополиизоцианурата или минеральной ваты. Заказчикам предоставляется выбор цветов полимерных покрытий по каталогу RAL.</p>
-			<a href="prices" class="fancy-button fancy-button--yellow fancy-button--big"><span>Узнать цену</span></a>
+			<a href="<?php echo get_permalink( get_page_by_title('цены')->ID ); ?>" class="fancy-button fancy-button--yellow fancy-button--big"><span>Узнать цену</span></a>
 		</div>
 	</section>
-	<section class="wall-types">
-		<div class="wall-types__wrapper lcw">
-			<div class="wall-types__item">
-				<div class="wall-types__inner">
+	<section class="heater-types">
+		<div class="heater-types__wrapper lcw">
+			<div class="heater-types__item">
+				<div class="heater-types__inner">
 					<p>С утеплителем из минеральной ваты</p>
-					<div class="wall-types__container">
+					<div class="heater-types__container">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/wall/types/1.jpg" alt="">
 					</div>
 				</div>
 			</div>
-			<div class="wall-types__item">
-				<div class="wall-types__inner">
+			<div class="heater-types__item">
+				<div class="heater-types__inner">
 					<p>С утеплителем из пенополистирола</p>
-					<div class="wall-types__container">
+					<div class="heater-types__container">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/wall/types/2.jpg" alt="">
 					</div>
 				</div>
 			</div>
-			<div class="wall-types__item">
-				<div class="wall-types__inner">
+			<div class="heater-types__item">
+				<div class="heater-types__inner">
 					<p>С утеплителем из пенополиуретана</p>
-					<div class="wall-types__container">
+					<div class="heater-types__container">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/wall/types/3.jpg" alt="">
 					</div>
 				</div>
 			</div>
-			<div class="wall-types__item">
-				<div class="wall-types__inner">
+			<div class="heater-types__item">
+				<div class="heater-types__inner">
 					<p>С утеплителем из пенополиизоцианурата</p>
-					<div class="wall-types__container">
+					<div class="heater-types__container">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/wall/types/4.jpg" alt="">
 					</div>
 				</div>
@@ -74,30 +74,40 @@
 				</tr>
 				<tr>
 					<th>Ширина монтажная, мм</th>
-					<td colspan="7">600, 700, 1000, 1190, 1200</td>
+					<td colspan="7">1000</td>
 				</tr>
 				<tr>
 					<th>Вес с минеральной ватой, кг/м<sup>2</sup></th>
-					<td>15.3</td>
-					<td>17.6</td>
-					<td>19.9</td>
-					<td>22.2</td>
-					<td>25.7</td>
-					<td>31.4</td>
-					<td>37.2</td>
+					<td>16.9</td>
+					<td>19.5</td>
+					<td>21.9</td>
+					<td>24.4</td>
+					<td>28.2</td>
+					<td>34.4</td>
+					<td>40.6</td>
 				</tr>
 				<tr>
 					<th>Вес с пенополистиролом, кг/м<sup>2</sup></th>
-					<td>9.9</td>
-					<td>10.4</td>
 					<td>10.9</td>
 					<td>11.4</td>
-					<td>12.2</td>
-					<td>13.4</td>
-					<td>14.6</td>
+					<td>11.9</td>
+					<td>12.4</td>
+					<td>13.2</td>
+					<td>14.4</td>
+					<td>15.7</td>
 				</tr>
 				<tr>
 					<th>Приведенное сопротивление теплопередаче R (м<sup>2</sup>×C)/Вт с минеральной ватой</th>
+					<td>1.36</td>
+					<td>1.82</td>
+					<td>2.27</td>
+					<td>2.73</td>
+					<td>3.41</td>
+					<td>4.55</td>
+					<td>5.68</td>
+				</tr>
+				<tr>
+					<th>Приведенное сопротивление теплопередаче R (м<sup>2</sup>×C)/Вт с пенополистиролом</th>
 					<td>1.43</td>
 					<td>1.9</td>
 					<td>2.38</td>
@@ -105,16 +115,6 @@
 					<td>3.57</td>
 					<td>4.76</td>
 					<td>5.95</td>
-				</tr>
-				<tr>
-					<th>Приведенное сопротивление теплопередаче R (м<sup>2</sup>×C)/Вт с пенополистиролом</th>
-					<td>1.54</td>
-					<td>2.05</td>
-					<td>2.56</td>
-					<td>3.08</td>
-					<td>3.85</td>
-					<td>5.13</td>
-					<td>6.41</td>
 				</tr>					
 			</table>
 		</section>

@@ -36,6 +36,7 @@ callbackClose.click(function(){
 	
 //хедер
 var headerNav = $('.header-nav');
+
 $(window).bind('scroll', function(e){ 	
 	var scrollTop = $(window).scrollTop();
 	//var start = headerNav.offset().top;
@@ -44,7 +45,8 @@ $(window).bind('scroll', function(e){
 		headerNav.addClass('header-nav--fixed');		
 	} else {
 		headerNav.removeClass('header-nav--fixed');	
-	}
+	};
+	
 });
 	
 //слайдер
@@ -52,16 +54,23 @@ $(".slider__container").owlCarousel();
 	
 //odometer
 $(document).scroll(function(){
+	var scrollTop = $(window).scrollTop();
+	var windowHeight = $(window).outerHeight();
 	if ($('.prod-capacity').length) { 
-		var prodCapacity = $('.prod-capacity').offset().top;
-		var scrollTop = $(window).scrollTop();
-		var windowHeight = $(window).outerHeight();
+		var prodCapacity = $('.prod-capacity').offset().top;		
 		var lastWasLower = false;
 		if (scrollTop > prodCapacity - windowHeight && !lastWasLower){
 			$('.prod-capacity__odometer').html('4000000');
 			lastWasLower = true;
 		}; 
-	}	
+	};
+	var growth = $('.growth').offset().top;
+	var growthHeight = $('.growth').outerHeight();
+	var growthFlag = false;
+	if (scrollTop > growth - windowHeight + growthHeight / 2 && !growthFlag){
+		$('.growth__bar').addClass('growth__bar--active');
+		growthFlag = true;
+	}
 });
 
 //price
@@ -79,7 +88,22 @@ var menuCat = $('.menu-item-has-children');
 		$(this).prev().slideToggle();
 		$(this).toggleClass('header-nav__button--active');
 		$(this).parent().siblings().find('.sub-menu').slideUp();
-	})
+	});
+
+//tabs
+var tabs = $('.tabs');
+var tabsControls = tabs.find('.tabs__controls').children();
+var tabsContent = tabs.find('.tabs__content').children();
+	
+tabsControls.click(function(){
+	$(this).addClass('active');
+	$(this).siblings().removeClass('active');
+	var id = $(this).index();
+	var currentContent = tabsContent.eq(id);
+	currentContent.addClass('active');
+	currentContent.siblings().removeClass('active');
+});
+	
 });
 
 var priceAddConOpenBtn = $('.price__add');
@@ -87,6 +111,8 @@ priceAddConOpenBtn.click(function(){
 	var priceAddCon = $('.price-add');
 	priceAddCon.toggle();
 })
+
+
 
 //кнопка вверх
 $('.up').click(function(){

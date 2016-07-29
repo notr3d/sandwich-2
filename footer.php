@@ -70,20 +70,20 @@
 			<h2 class="callback__header">Отправить заявку</h2>
 			<form action="" class="callback__form">
 				<div class="callback__item">
-					<label for="">Имя</label>
-					<input type="text" placeholder="Имя">
+					<label for="callback-name">Имя</label>
+					<input type="text" id="callback-name" placeholder="Имя">
 				</div>
 				<div class="callback__item">
-					<label for="">Телефон</label>
-					<input type="tel" placeholder="Телефон">
+					<label for="callback-tel">Телефон</label>
+					<input type="tel" id="callback-tel" placeholder="Телефон">
 				</div>
 				<div class="callback__item">
-					<label for="">E-mail</label>
-					<input type="email" placeholder="E-mail">
+					<label for="callback-email">E-mail</label>
+					<input type="email" id="callback-email" placeholder="E-mail">
 				</div>	
 				<div class="callback__item callback__item">
-					<label for="">Сообщение</label>
-					<textarea></textarea>
+					<label for="callback-message">Сообщение</label>
+					<textarea id="callback-message"></textarea>
 				</div>	
 				<div class="callback__item">
 					<input type="submit" placeholder="Отправить">
