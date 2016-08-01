@@ -9,6 +9,7 @@
 @import "services.less";
 @import "about.less";
 @import "wall.less";
+@import "roof.less";
 
 @font-face {
     font-family: Bender;
@@ -30,6 +31,7 @@
 //@magenta: #a13b4a;
 @magenta: #a91130;
 @grey: #585c5f;
+@orange: #ff6701;
 
 .lcw {
 	margin: 0 auto;		
@@ -86,6 +88,9 @@ section {
 	.text {
 		&--red {
 			color: @red;
+		}
+		&--orange {
+			color: @orange;
 		}
 	}
 	ul {
@@ -336,8 +341,8 @@ input, textarea {
 			font-size: 18px;
 		}
 		p {
-			text-align: left;
-			font-size: 12px;
+			text-align: center;
+			font-size: 18px;
 		}
 	}
 	&__container {
@@ -604,6 +609,15 @@ input, textarea {
 			border-color: @red;
 		}
 	}
+	&--orange {
+		border-image: url(img/fancy-button-border-orange.png) 11;
+		background: @orange;
+		background-clip: padding-box;
+		span {
+			color: @white;
+			border-color: @white;
+		}
+	}
 	
 }
 
@@ -786,20 +800,24 @@ input, textarea {
 		}
 		&--9006 {
 			background-color: #a6a8a7;
-		}
-		
+		}		
 	}
 }
 
 table {
 	width: 100%;
 	border-collapse: collapse;
+	tr {
+		&:nth-child(2n) {
+			background: #ddd;
+		}
+	}
 	th, td {
 		padding: 15px;
 	}
 	th {
 		text-align: left;
-		padding-left: 0;
+		//padding-left: 0;
 	}
 	td {				
 		text-align: center;
@@ -851,6 +869,80 @@ table {
 			&.active {
 				display: block;
 			}
+		}
+	}
+}
+.intro {	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;		
+	padding: 45px 0 60px;
+	color: @white;
+	&__wrapper {
+		padding: 0 15px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		background-size: contain !important;
+		//background-size: auto 100%;
+		@media @m {
+			background-image: none;
+		}
+	}
+	&__header {
+		padding: 5px 15px 10px;
+		border-left: 2px solid @red;
+		border-right: 2px solid @red;
+		margin: 0;
+		margin-bottom: 45px;
+		text-transform: uppercase;
+		font-size: 36px;
+		@media @m {
+			font-size: 20px;
+			align-self: flex-start;
+			margin-bottom: 15px;
+		}
+	}
+	&__text {
+		margin: 0;
+		margin-bottom: 75px;
+		width: 480px;
+		font-size: 14px;
+		line-height: 24px;
+		@media @m {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.wall {
+	.intro {
+		background-image: linear-gradient(to bottom, #585c5f, transparent), url(img/wall/intro/bg.jpg);
+		&__wrapper {
+			background: url(img/wall/intro/pic.png) no-repeat left;
+		}
+	}
+}
+
+.roof {
+	.intro {
+		background-image: linear-gradient(to bottom, @orange, transparent), url(img/wall/intro/bg.jpg);
+		&__wrapper {
+			background: url(img/roof/intro/pic.png) no-repeat left;;
+		}
+	}
+}
+
+.profnastil {
+	.intro {
+		background-image: url(img/profnastil/intro/pic.jpg);
+		&__wrapper {
+			color: @black;
 		}
 	}
 }

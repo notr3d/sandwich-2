@@ -1,7 +1,7 @@
 
 	</main><!-- #content -->
 	<footer class="site-footer">	
-		<div class="site-footer__gradient"></div>
+		<!--<div class="site-footer__gradient"></div>-->
 		<div class="site-footer-nav">
 			<div class="site-footer-nav__wrapper lcw">
 				<div class="site-footer-nav__column">
@@ -63,7 +63,7 @@
 				<p class="site-footer-copy__text">© 2016 «Новый Формат»</p>
 			</div>
 		</div>
-		<button type="button" class="up">↑</button>
+		<button type="button" class="up"></button>
 	</footer>
 	<div class="callback">
 		<div class="callback__wrapper">

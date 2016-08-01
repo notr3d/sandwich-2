@@ -8,7 +8,7 @@
 		display: -o-flex;
 		display: flex;
 		flex-wrap: wrap;
-		padding: 25px 0 30px;
+		padding-top: 15px;
 	}
 	&__item {
 		display: -webkit-flex;
@@ -79,13 +79,18 @@
 	background: linear-gradient(to bottom, #2c3033, #3f444a);	
 	background: linear-gradient(to bottom, #3d4042, #585c5f);	
 	z-index: 100000;	
-	border-top: 2px solid @red;
+	border-top: 2px solid @red;	
 	&--fixed {
 		@media @d {
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
+		}
+		.header-nav__wrapper {
+			&::before {
+				display: block;
+			}
 		}
 	}
 	&__wrapper {
@@ -97,9 +102,18 @@
 		flex-wrap: wrap;
 		padding: 0;
 		list-style: none;
+		justify-content: space-between;
 		position: relative;
+		&::before {
+			content: '';
+			display: none;
+			width: 200px;
+			height: 50px;
+			background: url(img/site-logo-nav.png) no-repeat center;
+			margin-right: 30px;
+		}
 		& > li {
-			flex-grow: 1;
+			//flex-grow: 1;
 			position: relative;
 			/*&:not(:last-child) {
 				&::before {
@@ -120,14 +134,14 @@
 			}
 			a {
 				display: block;
-				padding: 7.5px 15px;
+				padding: 10px 30px;
 				text-decoration: none;
 				color: @white;
-				text-transform: uppercase;	
-				color: @black;
-				font-size: 12px;
+				//text-transform: uppercase;	
+				//color: @black;
+				font-size: 16px;
 				&:hover {
-					background: @red;
+					background: @yellow;
 					color: @white;
 				}
 			}		
@@ -141,7 +155,7 @@
 				}
 			}
 			.sub-menu {
-				box-shadow: 0 0 0 1px #ddd inset;
+				//box-shadow: 0 0 0 1px #ddd inset;
 				list-style: none;
 				padding: 0;
 				position: absolute;
@@ -149,9 +163,9 @@
 				left: 0;
 				display: none;
 				z-index: 100000;
-				width: 100%;
-				background: @white;
-				&::before {
+				//width: 100%;
+				background: @red;
+				/*&::before {
 					box-sizing: border-box;
 					content: '';
 					display: block;
@@ -165,7 +179,7 @@
 					@media @m {
 						display: none;
 					}
-				}
+				}*/
 				@media @m {
 					background: none;
 					position: static;
