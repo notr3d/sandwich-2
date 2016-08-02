@@ -3,7 +3,9 @@
 	<section class="intro">
 		<div class="intro__wrapper lcw">
 			<h1 class="intro__header">Стеновые сэндвич-панели</h1>
-			<p class="intro__text">Компания «Новый Формат» продает в Москве стеновые сэндвич-панели, в том числе с гладкой, волнистой и ребристой поверхностью. Внешние слои изготавливаются из профилированной оцинкованной листовой стали с антикоррозийной защитой и лаковым покрытием, а внутренние – из теплоизоляционного материала: пенополистирола, пенополиуретана, пенополиизоцианурата или минеральной ваты. Заказчикам предоставляется выбор цветов полимерных покрытий по каталогу RAL.</p>
+			<div class="intro__text">
+				<p>Компания «Новый Формат» продает в Москве стеновые сэндвич-панели, в том числе с гладкой, волнистой и ребристой поверхностью. Внешние слои изготавливаются из профилированной оцинкованной листовой стали с антикоррозийной защитой и лаковым покрытием, а внутренние – из теплоизоляционного материала: пенополистирола, пенополиуретана, пенополиизоцианурата или минеральной ваты. Заказчикам предоставляется выбор цветов полимерных покрытий по каталогу RAL.</p>
+			</div>
 			<a href="<?php echo get_permalink( get_page_by_title('цены')->ID ); ?>" class="fancy-button fancy-button--yellow fancy-button--big"><span>Узнать цену</span></a>
 		</div>
 	</section>
@@ -133,25 +135,25 @@
 	</article>
 	<section class="wall-structure">
 		<div class="wall-structure__wrapper">
-			<div class="wall-structure__pic-container">
-				<span class="wall-structure__number wall-structure__number--1">1</span>
-				<span class="wall-structure__number wall-structure__number--2">2</span>
-				<span class="wall-structure__number wall-structure__number--3">3</span>
+			<div class="wall-structure__col wall-structure__col--pic">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/wall/structure/pic.png" alt="" class="wall-structure__img">
 			</div>
-			<div class="wall-structure__description">
-				<div class="wall-structure__block">
-					<h4>1. Замок «шип-паз»</h4>
-					<p>используется на тонких плитах толщиной 40-60 мм.</p>
+			<div class="wall-structure__col">
+				<div class="wall-structure__description">
+					<div class="wall-structure__block">
+						<h4>1. Замок «шип-паз»</h4>
+						<p>используется на тонких плитах толщиной 40-60 мм.</p>
+					</div>
+					<div class="wall-structure__block">
+						<h4>2. Лабиринтный замок</h4>
+						<p>«двойной шип-паз» разработан для более толстых плит толщиной 60-120 мм.</p>
+					</div>
+					<div class="wall-structure__block">
+						<h4>3. Замок «Z-lock»</h4>
+						<p>используется для толстых плит 100-1200 мм. Это последнее изобретение конструкторов. При соединении замка слышится характерный щелчок.</p>
+					</div>
 				</div>
-				<div class="wall-structure__block">
-					<h4>2. Лабиринтный замок</h4>
-					<p>«двойной шип-паз» разработан для более толстых плит толщиной 60-120 мм.</p>
-				</div>
-				<div class="wall-structure__block">
-					<h4>3. Замок «Z-lock»</h4>
-					<p>используется для толстых плит 100-1200 мм. Это последнее изобретение конструкторов. При соединении замка слышится характерный щелчок.</p>
-				</div>
-			</div>			
+			</div>						
 		</div>
 	</section>
 	<article>

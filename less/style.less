@@ -70,12 +70,13 @@ section {
 	}
 	.section-header {
 		width: auto;
-		border-left: 1px solid @red;
-		border-right: 1px solid @red;
+		border-left: 2px solid @red;
+		border-right: 2px solid @red;
 		text-transform: uppercase;
-		padding: 5px 15px 10px;
+		padding: 5px;
 		display: inline-block;
 		font-size: 36px;
+		line-height: 36px;
 		span {
 			color: @red;
 		}
@@ -107,7 +108,7 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {	
-    font-weight: lighter;
+    font-weight: normal;
     letter-spacing: 1px;
 	//font-family: 'Open Sans Condensed', sans-serif;	
 }
@@ -167,13 +168,14 @@ input, textarea {
 	&__header {
 		text-transform: uppercase;
 		font-size: 36px;
+		line-height: 36px;
 		letter-spacing: 1px;
         margin: 0;
 		margin-bottom: 30px;
         display: inline-block;
         border-left: 2px solid @magenta;
         border-right: 2px solid @magenta;
-        padding: 5px 15px 10px;
+        padding: 0 15px;
 	}
 	&__text {
         font-size: 14px;
@@ -234,6 +236,7 @@ input, textarea {
 }
 
 .types {
+	margin-bottom: 15px;
 	&__container {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -875,9 +878,9 @@ table {
 .intro {	
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;		
-	padding: 45px 0 60px;
-	color: @white;
+	background-size: cover;
+	color: @white;		
+	padding: 30px 0;
 	&__wrapper {
 		padding: 0 15px;
 		display: -webkit-flex;
@@ -893,14 +896,24 @@ table {
 			background-image: none;
 		}
 	}
+	&__container {			
+		.fancy-button {
+			float: right;
+		}
+		@media @d {
+			width: 475px;
+		}
+	}
 	&__header {
 		padding: 5px 15px 10px;
 		border-left: 2px solid @red;
 		border-right: 2px solid @red;
 		margin: 0;
-		margin-bottom: 45px;
+		margin-bottom: 30px;
 		text-transform: uppercase;
 		font-size: 36px;
+		line-height: 36px;
+		display: inline-block;
 		@media @m {
 			font-size: 20px;
 			align-self: flex-start;
@@ -908,11 +921,14 @@ table {
 		}
 	}
 	&__text {
-		margin: 0;
-		margin-bottom: 75px;
+		margin-bottom: 30px;
 		width: 480px;
 		font-size: 14px;
 		line-height: 24px;
+		p {
+			margin: 0;
+			margin-bottom: 15px;
+		}
 		@media @m {
 			width: 100%;
 			margin-bottom: 30px;
@@ -939,8 +955,11 @@ table {
 }
 
 .profnastil {
+	background: #fff;
 	.intro {
 		background-image: url(img/profnastil/intro/pic.jpg);
+		background-position: left center;
+		background-size: auto 100%;
 		&__wrapper {
 			color: @black;
 		}

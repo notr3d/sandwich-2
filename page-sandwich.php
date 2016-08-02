@@ -9,35 +9,29 @@
 	<div class="site-nav__wrapper lcw">
 		<div class="site-nav-submenu">
 			<div class="site-nav-submenu__item">
-				<a href="wall" class="site-nav-submenu__inner">
-					<img src="" alt="">
+				<a href="wall" class="site-nav-submenu__inner site-nav-submenu__inner--wall">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/wall.png" alt="">
 					<h3>Стеновые сэндвич-панели</h3>
 				</a>
 			</div>
 			<div class="site-nav-submenu__item">
-				<a href="roof" class="site-nav-submenu__inner">
-					<img src="" alt="">
+				<a href="roof" class="site-nav-submenu__inner site-nav-submenu__inner--roof">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/roof.png" alt="">
 					<h3>Кровельные сэндвич-панели</h3>
 				</a>
 			</div>
 			<div class="site-nav-submenu__item">
-				<a href="metal" class="site-nav-submenu__inner">
-					<img src="" alt="">
-					<h3>Металлические сэндвич-панели</h3>
-				</a>
-			</div>
-			<div class="site-nav-submenu__item">
-				<a href="fireproof" class="site-nav-submenu__inner">
-					<img src="" alt="">
+				<a href="fireproof" class="site-nav-submenu__inner site-nav-submenu__inner--fireproof">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/fireproof.png" alt="">
 					<h3>Противопожарные перегородки</h3>
 				</a>
 			</div>
 			<div class="site-nav-submenu__item">
-				<a href="shaped" class="site-nav-submenu__inner">
-					<img src="" alt="">
+				<a href="shaped" class="site-nav-submenu__inner site-nav-submenu__inner--shaped">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/shaped.png" alt="">
 					<h3>Фасонные элементы</h3>
 				</a>
-			</div>				
+			</div>					
 		</div>						
 	</div>
 </div>

@@ -11,20 +11,20 @@
 			<div class="site-nav-menu">
 				<div class="site-nav-menu__item" id="site-nav-menu-item--1">
 					<a href="sandwich" class="site-nav-menu__inner">
-						<img src="" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/sandwich.png" alt="">
 						<h3>Сэндвич-панели</h3>					
 						<button type="button" class="site-nav-menu__slide"></button>
 					</a>
 				</div>
 				<div class="site-nav-menu__item" id="site-nav-menu-item--2">
 					<a href="profnastil" class="site-nav-menu__inner">
-						<img src="" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/profnastil.png".png alt="">
 						<h3>Профнастил</h3>
 					</a>
 				</div>
 				<div class="site-nav-menu__item" id="site-nav-menu-item--2">
-					<a href="profnastil" class="site-nav-menu__inner">
-						<img src="" alt="">
+					<a href="roll" class="site-nav-menu__inner">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/steel.png" alt="">
 						<h3>Окрашенная рулонная сталь</h3>
 					</a>
 				</div>						
@@ -32,25 +32,25 @@
 			<div class="site-nav-submenu" id="submenu-1">
 				<div class="site-nav-submenu__item">
 					<a href="wall" class="site-nav-submenu__inner">
-						<img src="" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/wall.png" alt="">
 						<h3>Стеновые сэндвич-панели</h3>
 					</a>
 				</div>
 				<div class="site-nav-submenu__item">
 					<a href="roof" class="site-nav-submenu__inner">
-						<img src="" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/roof.png" alt="">
 						<h3>Кровельные сэндвич-панели</h3>
 					</a>
 				</div>
 				<div class="site-nav-submenu__item">
 					<a href="fireproof" class="site-nav-submenu__inner">
-						<img src="" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/fireproof.png" alt="">
 						<h3>Противопожарные перегородки</h3>
 					</a>
 				</div>
 				<div class="site-nav-submenu__item">
 					<a href="shaped" class="site-nav-submenu__inner">
-						<img src="" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/shaped.png" alt="">
 						<h3>Фасонные элементы</h3>
 					</a>
 				</div>				

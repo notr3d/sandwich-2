@@ -64,13 +64,15 @@ $(document).scroll(function(){
 			lastWasLower = true;
 		}; 
 	};
-	var growth = $('.growth').offset().top;
-	var growthHeight = $('.growth').outerHeight();
-	var growthFlag = false;
-	if (scrollTop > growth - windowHeight + growthHeight / 2 && !growthFlag){
-		$('.growth__bar').addClass('growth__bar--active');
-		growthFlag = true;
-	}
+	if ($('.prod-capacity').length) {
+		var growth = $('.growth').offset().top;
+		var growthHeight = $('.growth').outerHeight();
+		var growthFlag = false;
+		if (scrollTop > growth - windowHeight + growthHeight / 2 && !growthFlag){
+			$('.growth__bar').addClass('growth__bar--active');
+			growthFlag = true;
+		};
+	};	
 });
 
 //price
@@ -85,9 +87,9 @@ var menuCat = $('.menu-item-has-children');
 	var menuBtn = $('.header-nav__button');
 	//menuBtn.prev().hide();
 	menuBtn.click(function(){
-		$(this).prev().slideToggle();
+		$(this).prev().toggle();
 		$(this).toggleClass('header-nav__button--active');
-		$(this).parent().siblings().find('.sub-menu').slideUp();
+		$(this).parent().siblings().find('.sub-menu').hide();
 	});
 
 //tabs

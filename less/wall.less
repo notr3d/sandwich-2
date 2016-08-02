@@ -9,48 +9,44 @@
 			display: -ms-flex;
 			display: -o-flex;
 			display: flex;	
-			margin: 0 auto;		
-			@media @m {
-				width: 100%;
-			}
-			@media @t {
-				width: 768px;
-			}
-			@media @d {
-				width: 1420px;
-			}
+			flex-wrap: wrap;
+			margin: 0 auto;	
 		}
-		&__pic-container {
-			flex-grow: 1;
-			background: url(img/wall/structure/pic.png) no-repeat center;
-			background-size: cover;
+		&__col {
 			position: relative;
+			&--pic {
+				font-size: 0;
+				text-align: center;
+				@media @d {
+					text-align: right;
+				}
+			}
+			flex-basis: 100%;
+			@media @d {
+				flex-basis: 49%;				
+				background-size: auto 100%;
+				background-position: right;
+			}			
 		}
-		&__number {
-			display: inline-block;
-			background: @red;
-			border-radius: 50%;
-			width: 35px;
-			height: 35px;
-			line-height: 35px;
-			text-align: center;
-			font-size: 16px;
-			position: absolute;
-			top: 45px;
-			&:nth-child(3) {
-				right: 250px;
+		&__img {
+			width: 100%;
+			@media @d {
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 100%;
+				width: auto;
 			}
-			&:nth-child(2) {
-				right: 465px;
-			}
-			&:nth-child(1) {
-				right: 678px;
-			}
-			
 		}
 		&__description {
-			flex-basis: 570px;
-			padding: 50px 170px 90px 0;
+			padding: 15px;
+			width: 100%;
+			background: @black;
+			@media @d {
+				padding: 50px 0 90px;
+				width: 540px;
+				background: none;
+			}
 		}
 		&__block {
 			margin-bottom: 20px;
