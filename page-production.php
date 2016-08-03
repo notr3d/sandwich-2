@@ -48,12 +48,12 @@
 						<h3>Противопожарные перегородки</h3>
 					</a>
 				</div>
-				<div class="site-nav-submenu__item">
+				<!--<div class="site-nav-submenu__item">
 					<a href="shaped" class="site-nav-submenu__inner">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/shaped.png" alt="">
 						<h3>Фасонные элементы</h3>
 					</a>
-				</div>				
+				</div>-->				
 			</div>						
 		</div>
 	</div>

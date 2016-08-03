@@ -1752,9 +1752,6 @@ textarea {
 .types--sandwich .types__item:nth-child(2) .types__img {
   background-image: url(img/site-nav/img/roof.png);
 }
-.heater-types {
-  padding-top: 45px;
-}
 .heater-types__wrapper {
   display: -webkit-flex;
   display: -moz-flex;

@@ -54,9 +54,10 @@
 					<div class="price__item price__item-small">
 						<input type="submit" value="Отправить">
 					</div>
+					<div class="add"></div>
 					<!--<div class="price__item">
 						<button type="button" class="price__add">Дополнительные параметры</button>
-					</div>-->
+					</div>
 					<div class="price-add">
 						<div class="price-add__container">
 							<div class="price-add__item price-add__item--dim">
@@ -111,7 +112,7 @@
 								</div>			
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</form>
 			</div>
 		</div>
