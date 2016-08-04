@@ -59,7 +59,7 @@
 		<?php wp_nav_menu(array(
 			'theme_location' => 'header-nav',
 			'container_class' => 'header-nav',
-			'menu_class' => 'header-nav__wrapper lcw'
+			'menu_class' => 'header-nav__wrapper'
 		)); ?>
 	</header>
 	<main class="site-content">
