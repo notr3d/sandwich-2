@@ -643,20 +643,19 @@ input, textarea {
 		display: -o-flex;
 		display: flex;	
 		flex-wrap: wrap;
-		justify-content: center;
 	}
 	&__item {
-		padding: 10px;		
+		padding: 15px 30px;		
 		font-size: 13px;
 		//counter-increment: number;
 		@media @m {
-			flex-basis: 50%;
+			flex-basis: 100%;
 		}
 		@media @t {
-			flex-basis: 33%;
+			flex-basis: 50%;
 		}
 		@media @d {
-			flex-basis: 20%;
+			flex-basis: 33%;
 		}			
 		/*&::before {   
 			content: counter(number);
@@ -674,9 +673,11 @@ input, textarea {
 		h3 {
 			font-size: 18px;
 			color: @red;
-			padding-left: 30px;
 			background: url(img/pin.png) no-repeat left center;
-			background-size: contain;
+			background-size: auto 30px;
+			margin: 0;
+			margin-bottom: 15px;
+			padding: 15px 0 15px 45px;
 		}
 		p {
 			font-size: 14px;
@@ -728,8 +729,7 @@ input, textarea {
 		}
 		&-6 {
 			flex-basis: 49%;
-		}
-		
+		}		
 	}
 }
 
@@ -831,6 +831,11 @@ table {
 		text-align: center;
 		&:not(:last-child) {
 			border-right: 1px solid @red;
+		}
+	}
+	&.horizontal {
+		th {
+			text-align: center;
 		}
 	}
 }

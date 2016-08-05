@@ -5,6 +5,7 @@
 			<div class="site-nav-menu">
 				<div class="site-nav-menu__item" id="site-nav-menu-item--1">
 					<a href="sandwich" class="site-nav-menu__inner site-nav-menu__inner--sandwich">
+						<div class="site-nav-menu__bg"></div>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/sandwich.png" alt="">
 						<h3>Сэндвич-панели</h3>					
 						<button type="button" class="site-nav-menu__slide"></button>
@@ -12,12 +13,14 @@
 				</div>
 				<div class="site-nav-menu__item" id="site-nav-menu-item--2">
 					<a href="profnastil" class="site-nav-menu__inner site-nav-menu__inner--profnastil">
+						<div class="site-nav-menu__bg"></div>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/profnastil.png" alt="">
 						<h3>Профнастил</h3>
 					</a>
 				</div>	
 				<div class="site-nav-menu__item" id="site-nav-menu-item--3">
 					<a href="roll" class="site-nav-menu__inner site-nav-menu__inner--roll">
+						<div class="site-nav-menu__bg"></div>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/site-nav/img/steel.png" alt="">
 						<h3>Рулонная сталь</h3>
 					</a>
