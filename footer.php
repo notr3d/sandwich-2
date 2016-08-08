@@ -94,8 +94,8 @@
 	</div>
 </div><!-- #page -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://npmcdn.com/react@15.3.0/dist/react-with-addons.js"></script>
-<script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+<!--<script src="https://npmcdn.com/react@15.3.0/dist/react-with-addons.js"></script>
+<script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-vOBdjVqwgHav99Lw79O25RL04z5pq2c" type="text/javascript"></script>
 <script>
 	var center = new google.maps.LatLng(55.736095, 37.718121);

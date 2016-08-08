@@ -35,6 +35,11 @@
     flex-basis: 25%;
   }
 }
+@media (max-width: 767px) {
+  .site-header__item--logo {
+    justify-content: center;
+  }
+}
 .site-header__item--button {
   justify-content: center !important;
 }
@@ -47,6 +52,12 @@
 }
 .site-logo--footer {
   background-image: url(img/site-logo-footer.png);
+}
+@media (max-width: 767px) {
+  .site-logo {
+    width: 200px;
+    height: 100px;
+  }
 }
 .fast-links {
   display: -webkit-flex;
@@ -246,23 +257,35 @@
 }
 .header-nav__button {
   position: absolute;
-  width: 52px;
-  height: 100%;
+  width: 50px;
+  height: 50px;
   top: 0;
   right: 0;
-  background: #333;
+  background: none;
   border: none;
-  border-left: 1px solid #eee;
   color: #eee;
   padding: 0;
   font-size: 25px;
   display: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
 }
 .header-nav__button::before {
-  content: '↓';
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-bottom: 5px solid #eee;
+  border-right: 5px solid #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%) rotate(45deg);
+  transition: .3s;
 }
 .header-nav__button--active::before {
-  content: '↑';
+  transform: translate(-50%, -25%) rotate(225deg);
 }
 @media (max-width: 767px) {
   .header-nav__button {
@@ -351,6 +374,7 @@
 }
 .up:hover {
   background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 .up:hover::before {
   border-color: #ff954e;
@@ -1544,6 +1568,84 @@ article {
 .production .site-nav {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent), url(img/production/nav/bg.jpg);
 }
+.delivery .site-nav {
+  background-image: linear-gradient(to bottom, #585c5f, transparent);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #eee;
+}
+.delivery .site-nav__wrapper {
+  padding-top: 0;
+}
+.delivery .site-nav-menu__inner {
+  background: #ff6701;
+  border-color: #ff6701;
+  padding-top: 45px;
+  width: 220px;
+  height: 220px;
+}
+.delivery .site-nav-menu__inner img {
+  width: auto;
+  min-height: 0;
+  margin-bottom: 15px;
+}
+.delivery .site-nav-menu__inner h3 {
+  font-size: 16px;
+}
+.delivery .page-heading__header {
+  border-color: #ff6701;
+}
+.delivery .section-header {
+  border-color: #ff6701;
+}
+.delivery .section-header span {
+  color: #ff6701;
+}
+.delivery .tabs__controls {
+  border-color: #ff6701;
+}
+.delivery .tabs__controls div:hover {
+  border-color: #ff6701;
+}
+.delivery .tabs__controls div.active {
+  background-color: #ff6701;
+}
+.delivery table td:not(:last-child) {
+  border-color: #ff6701;
+}
+.delivery .consult {
+  background-image: url(img/consult-bg-orange.jpg);
+}
+.delivery ul li {
+  background-image: url(img/pin-orange.png);
+}
+.roll .site-nav {
+  background-image: url(img/roll/bg.jpg);
+  color: #eee;
+}
+.roll .page-heading__text {
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  margin-bottom: 110px;
+}
+.roll .page-heading .container {
+  justify-content: center;
+}
+.roll .page-heading .container .callback__open {
+  padding: 8px 20px;
+  margin-left: 65px;
+}
+.roll .roll-structure {
+  height: 530px;
+  background: #4a4d50 url(img/roll/pic.png) no-repeat center;
+}
+@media (max-width: 767px) {
+  .roll .roll-structure {
+    background-position: -800px right;
+  }
+}
 @font-face {
   font-family: Bender;
   src: url(fonts/Bender.otf);
@@ -1609,6 +1711,9 @@ section .text--red {
 section .text--orange {
   color: #ff6701;
 }
+section .text--bold {
+  font-weight: bold;
+}
 section ul {
   padding: 0;
   list-style: none;
@@ -1616,7 +1721,6 @@ section ul {
 section ul li {
   padding-left: 30px;
   margin-bottom: 15px;
-  font-size: 14px;
   position: relative;
   background: url(img/pin.png) no-repeat left 3px;
 }
@@ -1920,7 +2024,7 @@ textarea {
 }
 .items__img {
   height: 60px;
-  background: #eee;
+  width: auto;
   margin-bottom: 15px;
 }
 .items__text {
@@ -2294,8 +2398,8 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-table tr:nth-child(2n) {
-  background: #ddd;
+table tr:nth-child(2n -1) {
+  background: #edeeef;
 }
 table th,
 table td {
@@ -2312,6 +2416,7 @@ table td:not(:last-child) {
 }
 table.horizontal th {
   text-align: center;
+  background-color: #edeeef;
 }
 .tabs {
   margin-bottom: 15px;
@@ -2322,6 +2427,7 @@ table.horizontal th {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  border-bottom: 2px solid #a91130;
 }
 .tabs__controls div {
   flex-grow: 1;
@@ -2339,6 +2445,7 @@ table.horizontal th {
 }
 .tabs__controls div:hover {
   border-color: #a91130;
+  border-bottom-color: transparent;
 }
 .tabs__content {
   padding: 15px 0;

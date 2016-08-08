@@ -12,6 +12,8 @@
 @import "roof.less";
 @import "packing.less";
 @import "production.less";
+@import "delivery.less";
+@import "roll.less";
 
 @font-face {
     font-family: Bender;
@@ -95,6 +97,9 @@ section {
 		&--orange {
 			color: @orange;
 		}
+		&--bold {
+			font-weight: bold;
+		}
 	}
 	ul {
 		padding: 0;
@@ -102,7 +107,6 @@ section {
 		li {
 			padding-left: 30px;
 			margin-bottom: 15px;
-			font-size: 14px;
 			position: relative;
 			background: url(img/pin.png) no-repeat left 3px;
 		}
@@ -423,7 +427,7 @@ input, textarea {
 	}
 	&__img {
 		height: 60px;
-		background: @white;
+		width: auto;
 		margin-bottom: 15px;
 	}
 	&__text {
@@ -816,8 +820,8 @@ table {
 	width: 100%;
 	border-collapse: collapse;
 	tr {
-		&:nth-child(2n) {
-			background: #ddd;
+		&:nth-child(2n -1) {
+			background: #edeeef;
 		}
 	}
 	th, td {
@@ -836,6 +840,7 @@ table {
 	&.horizontal {
 		th {
 			text-align: center;
+			background-color: #edeeef;
 		}
 	}
 }
@@ -847,7 +852,8 @@ table {
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
-		display: flex;
+		display: flex;		
+		border-bottom: 2px solid @red;
 		div {
 			flex-grow: 1;
 			padding: 15px;
@@ -863,6 +869,7 @@ table {
 			}
 			&:hover {
 				border-color: @magenta;
+				border-bottom-color: transparent;
 			}
 		}
 	}
