@@ -1227,6 +1227,17 @@ article {
 .services .site-nav-submenu__inner {
   padding-top: 45px;
 }
+.about .items__wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about .items__img {
+  height: 84px;
+}
 .photo {
   padding: 0;
   font-size: 0;
@@ -1293,14 +1304,6 @@ article {
 .prod-capacity__container p:first-child {
   font-weight: bold;
   font-size: 40px;
-}
-.items__wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-wrap: wrap;
 }
 .growth {
   background: url(img/about/growth/bg.jpg) no-repeat center;
@@ -1625,9 +1628,7 @@ article {
   color: #eee;
 }
 .roll .page-heading__text {
-  font-size: 18px;
-  letter-spacing: 1px;
-  word-spacing: 10px;
+  font-size: 21px;
   margin-bottom: 110px;
 }
 .roll .page-heading .container {
@@ -1645,6 +1646,9 @@ article {
   .roll .roll-structure {
     background-position: -800px right;
   }
+}
+.fillet .container .callback__open {
+  margin-left: 70px;
 }
 @font-face {
   font-family: Bender;
@@ -1676,6 +1680,9 @@ body {
   margin: 0;
   color: #333;
 }
+section {
+  margin: 30px 0;
+}
 @media (max-width: 767px) {
   section {
     padding: 0 15px;
@@ -1691,6 +1698,7 @@ section .section-header {
   width: auto;
   border-left: 2px solid #a91130;
   border-right: 2px solid #a91130;
+  line-height: 45px;
   text-transform: uppercase;
   padding: 5px;
   display: inline-block;
@@ -1700,10 +1708,27 @@ section .section-header {
 section .section-header span {
   color: #a91130;
 }
+section .section-header--long {
+  border: none;
+}
+section .section-header--long p {
+  padding: 5px;
+  margin: 0;
+}
+section .section-header--long p:first-child {
+  margin-bottom: 10px;
+  border-left: 2px solid #a91130;
+}
+section .section-header--long p:last-child {
+  border-right: 2px solid #a91130;
+}
 section .sub-header {
   color: #a91130;
   font-size: 30px;
   text-transform: uppercase;
+}
+section .text {
+  font-size: 16px;
 }
 section .text--red {
   color: #a91130;
@@ -1713,6 +1738,11 @@ section .text--orange {
 }
 section .text--bold {
   font-weight: bold;
+}
+section .text--warning {
+  margin: 65px 0;
+  padding-left: 70px;
+  background: url(img/warning.png) no-repeat;
 }
 section ul {
   padding: 0;
@@ -2306,6 +2336,9 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.container--center {
+  justify-content: center;
+}
 .container .col-4 {
   flex-basis: 33%;
 }
@@ -2471,6 +2504,7 @@ table.horizontal th {
   background-size: cover;
   color: #eee;
   padding: 30px 0;
+  margin: 0;
 }
 .intro__wrapper {
   padding: 0 15px;
