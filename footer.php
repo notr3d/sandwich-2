@@ -68,7 +68,8 @@
 	<div class="callback">
 		<div class="callback__wrapper">
 			<h2 class="callback__header">Отправить заявку</h2>
-			<form action="" class="callback__form">
+			<?php echo do_shortcode( '[contact-form-7 title="Отправить заявку"]' ); ?>
+			<!--<form action="" class="callback__form">
 				<div class="callback__item">
 					<label for="callback-name">Имя</label>
 					<input type="text" id="callback-name" placeholder="Имя">
@@ -88,7 +89,7 @@
 				<div class="callback__item">
 					<input type="submit" placeholder="Отправить">
 				</div>					
-			</form>
+			</form>-->
 			<button class="callback__close">×</button>
 		</div>
 	</div>

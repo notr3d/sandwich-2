@@ -3,13 +3,14 @@
 	<div class="contacts__wrapper">
 		<div class="contacts__container">
 			<h1 class="contacts__header">Контакты</h1>
-			<form class="contacts__form">
+			<?php echo do_shortcode( '[contact-form-7 title="Контакты"]' ); ?>
+			<!--<form class="contacts__form">
 				<input type="text" placeholder="имя">
 				<input type="email" placeholder="email">
 				<input type="tel" placeholder="телефон">
 				<textarea rows="10" placeholder="сообщение"></textarea>
 				<input type="submit" placeholder="Отправить">
-			</form>
+			</form>-->
 		</div>
 		<div class="contacts__map" id="map"></div>			
 	</div>
