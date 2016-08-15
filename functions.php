@@ -148,7 +148,8 @@ function register_menus() {
 	  'footer-nav-1' => __( 'Footer navigation 1' ),
 	  'footer-nav-2' => __( 'Footer navigation 2' ),
 	  'footer-nav-3' => __( 'Footer navigation 3' ),
-	  'footer-nav-4' => __( 'Footer navigation 4' )
+	  'footer-nav-4' => __( 'Footer navigation 4' ),
+	  'site-map' => __( 'Site-map' )
     )
   );
 }

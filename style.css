@@ -40,6 +40,11 @@
     justify-content: center;
   }
 }
+@media (min-width: 768px) {
+  .site-header__item--logo {
+    justify-content: center;
+  }
+}
 .site-header__item--button {
   justify-content: center !important;
 }
@@ -164,12 +169,11 @@
 }
 .header-nav__wrapper > li a {
   display: block;
-  padding: 7.5px 15px;
+  padding: 12.5px 20px;
   text-decoration: none;
   color: #eee;
 }
 .header-nav__wrapper > li a:hover {
-  background: #ffbc01;
   color: #eee;
 }
 .header-nav__wrapper > li > a {
@@ -187,6 +191,7 @@
 .header-nav__wrapper > li .sub-menu {
   list-style: none;
   padding: 0;
+  padding-bottom: 15px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -220,11 +225,12 @@
   }
 }
 .header-nav__wrapper > li .sub-menu li.current-menu-item a {
-  background: #ffbc01;
   color: #eee;
 }
+.header-nav__wrapper > li:hover {
+  box-shadow: inset 0 -8px 0 0 #a91130;
+}
 .header-nav__wrapper > li:hover > a {
-  background: linear-gradient(to bottom, #d7163d, #a91130 33%);
   color: #eee;
 }
 .header-nav__wrapper > li:hover::before {
@@ -389,7 +395,6 @@
 .site-footer-nav {
   background: #575c60;
   border-bottom: 1px solid #a91130;
-  border-top: 1px solid #a91130;
 }
 .site-footer-nav__wrapper {
   display: -webkit-flex;
@@ -590,7 +595,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
-  justify-content: center;
+  justify-content: flex-start;
+}
+@media (min-width: 1080px) {
+  .site-nav-menu {
+    justify-content: center;
+  }
 }
 .site-nav-menu__item {
   padding: 30px;
@@ -733,11 +743,11 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 15px;
-  justify-content: center;
 }
 @media (min-width: 1080px) {
   .site-nav-submenu {
     border: none;
+    justify-content: center;
   }
 }
 @media (max-width: 767px) {
@@ -833,6 +843,7 @@ article {
 @media (max-width: 767px) {
   article {
     width: 100%;
+    padding: 15px;
   }
 }
 @media (min-width: 768px) {
@@ -853,6 +864,7 @@ article {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   display: none;
+  z-index: 10000;
 }
 .callback--open {
   display: block;
@@ -941,47 +953,125 @@ article {
 .contacts {
   position: relative;
 }
-.contacts__map {
-  height: 600px;
-  width: 100%;
+.contacts .section-header {
+  margin: 0;
+  margin-bottom: 15px;
 }
-.contacts__wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
+.contacts__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 767px) {
-  .contacts__wrapper {
-    flex-direction: column;
+  .contacts__map {
+    position: static;
+    height: 600px;
   }
 }
 .contacts__container {
-  width: 300px;
-  padding: 15px;
+  width: 355px;
+  padding: 15px 45px;
   background: #fff;
   border-right: 1px solid #ddd;
+  background: linear-gradient(to bottom, #595b5f, #575c60);
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .contacts__container {
     width: 100%;
+    padding: 15px;
   }
+}
+.contacts__item {
+  margin-bottom: 15px;
+}
+.contacts__item p {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.contacts__item p:last-child {
+  font-weight: bold;
+}
+.contacts__item h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contacts__tel {
+  font-size: 20px !important;
+}
+.contacts__email {
+  font-size: 20px;
+  color: #fff;
 }
 .contacts__form input,
 .contacts__form textarea {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   padding: 15px;
-  width: 100%;
   font-family: 'Open Sans';
+  width: 100%;
 }
 .contacts__form input[type="submit"] {
-  cursor: pointer;
   background: #2e97d7;
   border: 1px solid #2e97d7;
   color: #eee;
   text-transform: uppercase;
+  border: 12px solid transparent;
+  border-image: url(img/fancy-button-border.png) 11;
+  outline: none;
+  cursor: pointer;
+  background-clip: padding-box;
+  background-color: #a91130;
+  font-family: Bender;
+}
+.contacts__form input[type="submit"] span {
+  color: #eee;
+  text-transform: uppercase;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  display: inline-block;
+  padding: 4px 8px;
+}
+.contacts__form input[type="submit"]--big {
+  padding: 8px 48px;
+}
+.contacts__form input[type="submit"]--big span {
+  font-size: 21px;
+}
+.contacts__form input[type="submit"]--right {
+  float: right;
+}
+.contacts__form input[type="submit"]--yellow {
+  border-image: url(img/fancy-button-border-yellow.png) 11;
+  background: #ffbc01;
+  background-clip: padding-box;
+}
+.contacts__form input[type="submit"]--yellow span {
+  color: #333;
+  border-color: #333;
+}
+.contacts__form input[type="submit"]--grey {
+  border-image: url(img/fancy-button-border-grey.png) 11;
+  background: #646668;
+  background-clip: padding-box;
+}
+.contacts__form input[type="submit"]--grey span {
+  color: #eee;
+  border-color: #a91130;
+}
+.contacts__form input[type="submit"]--orange {
+  border-image: url(img/fancy-button-border-orange.png) 11;
+  background: #ff6701;
+  background-clip: padding-box;
+}
+.contacts__form input[type="submit"]--orange span {
+  color: #eee;
+  border-color: #eee;
 }
 .contacts__form input[type="submit"]:hover {
   background: none;
@@ -989,6 +1079,71 @@ article {
 }
 .contacts__form textarea {
   resize: none;
+}
+.contacts .wpcf7-form-control {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px;
+  font-family: 'Open Sans';
+}
+.contacts .wpcf7-submit {
+  border: 12px solid transparent;
+  border-image: url(img/fancy-button-border.png) 11;
+  outline: none;
+  cursor: pointer;
+  background-clip: padding-box;
+  background-color: #a91130;
+  font-family: Bender;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+.contacts .wpcf7-submit span {
+  color: #eee;
+  text-transform: uppercase;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  display: inline-block;
+  padding: 4px 8px;
+}
+.contacts .wpcf7-submit--big {
+  padding: 8px 48px;
+}
+.contacts .wpcf7-submit--big span {
+  font-size: 21px;
+}
+.contacts .wpcf7-submit--right {
+  float: right;
+}
+.contacts .wpcf7-submit--yellow {
+  border-image: url(img/fancy-button-border-yellow.png) 11;
+  background: #ffbc01;
+  background-clip: padding-box;
+}
+.contacts .wpcf7-submit--yellow span {
+  color: #333;
+  border-color: #333;
+}
+.contacts .wpcf7-submit--grey {
+  border-image: url(img/fancy-button-border-grey.png) 11;
+  background: #646668;
+  background-clip: padding-box;
+}
+.contacts .wpcf7-submit--grey span {
+  color: #eee;
+  border-color: #a91130;
+}
+.contacts .wpcf7-submit--orange {
+  border-image: url(img/fancy-button-border-orange.png) 11;
+  background: #ff6701;
+  background-clip: padding-box;
+}
+.contacts .wpcf7-submit--orange span {
+  color: #eee;
+  border-color: #eee;
+}
+.contacts .wpcf7-not-valid-tip {
+  font-family: "Open Sans";
+  font-size: 12px;
 }
 .prices .price {
   padding: 30px 0;
@@ -1697,34 +1852,6 @@ section.colored {
 section.colored--blue {
   background: #2e97d7;
 }
-section .section-header {
-  width: auto;
-  border-left: 2px solid #a91130;
-  border-right: 2px solid #a91130;
-  line-height: 45px;
-  text-transform: uppercase;
-  padding: 5px;
-  display: inline-block;
-  font-size: 36px;
-  line-height: 36px;
-}
-section .section-header span {
-  color: #a91130;
-}
-section .section-header--long {
-  border: none;
-}
-section .section-header--long p {
-  padding: 5px;
-  margin: 0;
-}
-section .section-header--long p:first-child {
-  margin-bottom: 10px;
-  border-left: 2px solid #a91130;
-}
-section .section-header--long p:last-child {
-  border-right: 2px solid #a91130;
-}
 section .sub-header {
   color: #a91130;
   font-size: 30px;
@@ -1760,6 +1887,34 @@ section ul li {
 section img {
   width: 100%;
   margin-bottom: 15px;
+}
+.section-header {
+  width: auto;
+  border-left: 2px solid #a91130;
+  border-right: 2px solid #a91130;
+  line-height: 45px;
+  text-transform: uppercase;
+  padding: 5px;
+  display: inline-block;
+  font-size: 36px;
+  line-height: 36px;
+}
+.section-header span {
+  color: #a91130;
+}
+.section-header--long {
+  border: none;
+}
+.section-header--long p {
+  padding: 5px;
+  margin: 0;
+}
+.section-header--long p:first-child {
+  margin-bottom: 10px;
+  border-left: 2px solid #a91130;
+}
+.section-header--long p:last-child {
+  border-right: 2px solid #a91130;
 }
 h1,
 h2,
@@ -2589,4 +2744,13 @@ table.horizontal th {
 }
 .profnastil .intro__wrapper {
   color: #333;
+}
+.site-map .sub-menu {
+  margin-top: 15px;
+}
+.site-map .header-nav__button::before {
+  border-color: #a91130;
+}
+.site-map .header-nav__button {
+  display: none;
 }

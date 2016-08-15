@@ -47,7 +47,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 100%;
-	justify-content: center;
+	justify-content: flex-start;
+	@media @d {
+		justify-content: center;
+	}
 	&__item {
 		padding: 30px;
 		box-sizing: border-box;
@@ -187,9 +190,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 15px;
-	justify-content: center;
+	
 	@media @d {
 		border: none;
+		justify-content: center;
 	}
 	@media @m {
 		order: 1;

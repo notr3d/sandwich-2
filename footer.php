@@ -44,9 +44,9 @@
 					<a href="" class="site-logo site-logo--footer"></a>
 				</div>
 				<div class="site-footer-items__item">
-					<p class="site-footer-items__address">111024, г.Москва, ул. Авиамтороная,<br>
-					д.50, стр.2, пом.14, комн.50</p>
-					<a href="mailto:info@novform.ru" class="site-footer-items__email">info@novform@ru</a>
+					<p class="site-footer-items__address">111024, г.Москва, ул. Авиамоторная,<br>
+					д.50, стр.2</p>
+					<a href="mailto:info@novform.ru" class="site-footer-items__email" target="_blank">info@novform.ru</a>
 				</div>
 				<div class="site-footer-items__item site-footer-callback">
 					<p class="site-footer-callback__tel">+7 (495) 663-86-87</p>
@@ -120,7 +120,42 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/odometer.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/react.jsx"></script>
+<!--<script src="<?php echo get_template_directory_uri(); ?>/js/react.jsx"></script>-->
+<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter37947005 = new Ya.Metrika({
+					id:37947005,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true,
+					webvisor:true,
+					trackHash:true,
+					ecommerce:"dataLayer"
+				});
+			} catch(e) { }
+		});
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/37947005" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-80637134-1', 'auto');
+	ga('send', 'pageview');
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

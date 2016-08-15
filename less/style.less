@@ -74,35 +74,7 @@ section {
 		&--blue {
 			background: @blue;
 		}
-	}
-	.section-header {
-		width: auto;
-		border-left: 2px solid @red;
-		border-right: 2px solid @red;
-		line-height: 45px;
-		text-transform: uppercase;
-		padding: 5px;
-		display: inline-block;
-		font-size: 36px;
-		line-height: 36px;
-		span {
-			color: @red;
-		}
-		&--long {
-			border: none;
-			p {
-				padding: 5px;
-				margin: 0;
-				&:first-child {
-					margin-bottom: 10px;
-					border-left: 2px solid @red;
-				}
-				&:last-child {
-					border-right: 2px solid @red;
-				}
-			}
-		}
-	}
+	}	
 	.sub-header {
 		color: @red;
 		font-size: 30px;
@@ -138,6 +110,35 @@ section {
 	img {
 		width: 100%;
 		margin-bottom: 15px;
+	}
+}
+
+.section-header {
+	width: auto;
+	border-left: 2px solid @red;
+	border-right: 2px solid @red;
+	line-height: 45px;
+	text-transform: uppercase;
+	padding: 5px;
+	display: inline-block;
+	font-size: 36px;
+	line-height: 36px;
+	span {
+		color: @red;
+	}
+	&--long {
+		border: none;
+		p {
+			padding: 5px;
+			margin: 0;
+			&:first-child {
+				margin-bottom: 10px;
+				border-left: 2px solid @red;
+			}
+			&:last-child {
+				border-right: 2px solid @red;
+			}
+		}
 	}
 }
 
@@ -1008,5 +1009,19 @@ table {
 		&__wrapper {
 			color: @black;
 		}
+	}
+}
+
+.site-map {
+	.sub-menu {
+		margin-top: 15px;
+	}
+	.header-nav__button {
+		&::before {
+			border-color: @red;
+		}
+	}
+	.header-nav__button {
+		display: none;
 	}
 }
