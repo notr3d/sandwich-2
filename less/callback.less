@@ -34,7 +34,7 @@
 		display: -o-flex;
 		display: flex;
 		flex-wrap: wrap;	
-		justify-content: flex-end;
+		justify-content: flex-end;		
 	}
 	&__item {
 		padding: 8px;
@@ -48,6 +48,7 @@
 			width: 100%;
 			padding: 15px;
 			resize: vertical;
+			border: 1px solid @red;
 		}
 		input {
 			&[type="submit"] {
@@ -86,8 +87,20 @@
 		font-weight: bold;
 		transition: .3s;
 		&:hover {
-			transform: rotate(90deg);	
+			//transform: rotate(90deg);	
 			color: @red;
 		}
+	}
+	.wpcf7-not-valid-tip {
+		font-size: 12px;
+		padding: 0 15px;
+		background: @red;
+		color: #fff;
+	}
+	.wpcf7-validation-errors {
+		margin: 0;
+		padding: 0 5px;
+		font-size: 12px;
+		margin: 0 8px 8px;
 	}
 }

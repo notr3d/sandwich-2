@@ -29,7 +29,7 @@
 					<span>Для расчёта точной цены в Москве на изготовление сэндвич-панелей или запроса прайса с ценой и размерами вы можете связаться с нашими менеджерами любым удобным для вас способом:</span>
 				</div>
 				<div class="price-choose__item price-choose__item--right">
-					<button id="price-open" class="price-choose__open"><span>Заполнить форму</span></button>
+					<button class="price-choose__open callback__open"><span>Заполнить форму</span></button>
 				</div>				
 			</div>
 			<div class="price__container">

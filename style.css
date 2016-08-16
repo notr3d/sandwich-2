@@ -911,6 +911,7 @@ article {
   width: 100%;
   padding: 15px;
   resize: vertical;
+  border: 1px solid #a91130;
 }
 .callback__item input[type="submit"] {
   background: #eee;
@@ -947,8 +948,19 @@ article {
   transition: .3s;
 }
 .callback__close:hover {
-  transform: rotate(90deg);
   color: #a91130;
+}
+.callback .wpcf7-not-valid-tip {
+  font-size: 12px;
+  padding: 0 15px;
+  background: #a91130;
+  color: #fff;
+}
+.callback .wpcf7-validation-errors {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 12px;
+  margin: 0 8px 8px;
 }
 .contacts {
   position: relative;
