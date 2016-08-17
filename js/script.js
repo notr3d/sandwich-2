@@ -34,6 +34,16 @@ callbackClose.click(function(){
 	callbackBody.removeClass('callback--open');
 });
 	
+var callbackOpen2 = $('.callback2__open');	
+var callbackBody2 = $('.callback2');
+var callbackClose2 = $('.callback2__close');
+callbackOpen2.click(function(){
+	callbackBody2.addClass('callback2--open');
+});
+callbackClose2.click(function(){
+	callbackBody2.removeClass('callback2--open');
+});	
+	
 //хедер
 var headerNav = $('.header-nav');
 

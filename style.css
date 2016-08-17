@@ -962,6 +962,112 @@ article {
   font-size: 12px;
   margin: 0 8px 8px;
 }
+.callback2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 10000;
+}
+.callback2--open {
+  display: block;
+}
+.callback2__wrapper {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .callback2__wrapper {
+    top: 30px;
+    margin-top: 0;
+  }
+}
+.callback2__header {
+  text-transform: uppercase;
+  margin: 8px;
+}
+.callback2__form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.callback2__item {
+  padding: 8px;
+  flex-basis: 100%;
+}
+.callback2__item label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.callback2__item input,
+.callback2__item textarea {
+  width: 100%;
+  padding: 15px;
+  resize: vertical;
+  border: 1px solid #a91130;
+}
+.callback2__item input[type="submit"] {
+  background: #eee;
+  color: #a91130;
+  border: 1px solid #a91130;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .1s;
+  font-weight: bold;
+}
+.callback2__item input[type="submit"]:hover {
+  background: #a91130;
+  color: #eee;
+}
+.callback2__item textarea {
+  resize: vertical;
+}
+.callback2__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  padding: 0;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  transition: .3s;
+}
+.callback2__close:hover {
+  color: #a91130;
+}
+.callback2 .wpcf7-not-valid-tip {
+  font-size: 12px;
+  padding: 0 15px;
+  background: #a91130;
+  color: #fff;
+}
+.callback2 .wpcf7-validation-errors {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 12px;
+  margin: 0 8px 8px;
+}
 .contacts {
   position: relative;
 }

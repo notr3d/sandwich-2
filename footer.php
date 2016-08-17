@@ -50,7 +50,7 @@
 				</div>
 				<div class="site-footer-items__item site-footer-callback">
 					<p class="site-footer-callback__tel">+7 (495) 663-86-87</p>
-					<button class="callback__button site-footer-callback__button">Заказать обратный звонок</button>
+					<button class="site-header-callback__button callback2__open">Заказать обратный звонок</button>
 					<p class="site-footer-callback__hours">пн.-пт. с 9.00 до 18.00</p>
 				</div>
 				<div class="site-footer-items__item site-footer-items__item--callback">

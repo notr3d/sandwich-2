@@ -52,7 +52,7 @@
 			</div>
 			<div class="site-header__item site-header-callback">
 				<p class="site-header-callback__tel"><span>+7 (495)</span> 663-86-87</p>
-				<button class="site-header-callback__button">Заказать обратный звонок</button>
+				<button class="site-header-callback__button callback2__open">Заказать обратный звонок</button>
 				<p class="site-header-callback__hours">пн. - пт. с <b>9.00</b> до <b>18.00</b></p>
 			</div>					
 		</div>
@@ -62,4 +62,32 @@
 			'menu_class' => 'header-nav__wrapper'
 		)); ?>
 	</header>
+	<div class="callback2">
+		<div class="callback2__wrapper">
+			<h2 class="callback2__header">Отправить заявку</h2>
+			<?php echo do_shortcode( '[contact-form-7 title="Заказать обратный звонок"]' ); ?>
+			<!--<form action="" class="callback2__form">
+				<div class="callback2__item">
+					<label for="callback2-name">Имя</label>
+					<input type="text" id="callback2-name" placeholder="Имя">
+				</div>
+				<div class="callback2__item">
+					<label for="callback2-tel">Телефон</label>
+					<input type="tel" id="callback2-tel" placeholder="Телефон">
+				</div>
+				<div class="callback2__item">
+					<label for="callback2-email">E-mail</label>
+					<input type="email" id="callback2-email" placeholder="E-mail">
+				</div>	
+				<div class="callback2__item callback2__item">
+					<label for="callback2-message">Сообщение</label>
+					<textarea id="callback2-message"></textarea>
+				</div>	
+				<div class="callback2__item">
+					<input type="submit" placeholder="Отправить">
+				</div>					
+			</form>-->
+			<button class="callback2__close">×</button>
+		</div>
+	</div>
 	<main class="site-content">
