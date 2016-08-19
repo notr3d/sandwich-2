@@ -25,6 +25,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<meta name='wmail-verification' content='3743e3e00b0a2c90a18cf91caa871e04' />
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
